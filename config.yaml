@@ -1,0 +1,51 @@
+input_vcf: tests/data/full.vcf.gz
+input_index: tests/data/full.vcf.gz.tbi
+reference_fasta: tests/data/reference.fa
+reference_assembly: GRCh37
+test_mode: true
+output_dir: results/test
+chromosomes:
+- '1'
+- '2'
+regions:
+  NE:
+    focal: NE_Siberia
+    samples: tests/data/NE.samples
+    popmap: tests/data/NE.map.tsv
+    triplets: tests/data/NE.triplets.tsv
+  West:
+    focal: West_Siberia
+    samples: tests/data/West.samples
+    popmap: tests/data/West.map.tsv
+    triplets: tests/data/West.triplets.tsv
+  Central:
+    focal: Central_Siberia
+    samples: tests/data/Central.samples
+    popmap: tests/data/Central.map.tsv
+    triplets: tests/data/Central.triplets.tsv
+mac_vcf: tests/data/siberians.vcf.gz
+mac_index: tests/data/siberians.vcf.gz.tbi
+mac_min: 5
+fst_policy: corrected_clipped
+ld_samples: all_siberians
+clumping:
+  candidate_p: 0.8
+  candidates_only: true
+  p1: 1.0
+  p2: 1.0
+  r2: 0.5
+  kb: 250
+vep:
+  enabled: false
+  conda_env: VEP
+  cache_dir: /path/to/vep-cache
+  plugins_dir: /path/to/vep-cache/Plugins
+  cache_version: null
+  cadd: false
+  cadd_snv: /path/to/CADD/whole_genome_SNVs.tsv.gz
+  cadd_indels: /path/to/CADD/InDels.tsv.gz
+resources:
+  mem_mb: 1024
+  runtime_minutes: 5
+  tool_threads: 1
+  vep_threads: 2

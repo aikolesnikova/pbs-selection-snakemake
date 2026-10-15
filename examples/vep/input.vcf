@@ -1,0 +1,15 @@
+##fileformat=VCFv4.2
+##contig=<ID=1,length=249250621>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	1000000	example_0001	T	A	.	PASS	.
+1	1100000	example_0002	A	C	.	PASS	.
+1	1200000	example_0003	A	C	.	PASS	.
+1	1500000	example_0006	C	G	.	PASS	.
+1	2800000	example_0019	C	G	.	PASS	.
+1	2900000	example_0020	A	C	.	PASS	.
+1	6700000	example_0057	A	C	.	PASS	.
+1	8000000	example_0070	C	G	.	PASS	.
+1	9300000	example_0083	A	C	.	PASS	.
+1	11600000	example_0106	C	G	.	PASS	.
+1	15900000	example_0146	A	C	.	PASS	.
+1	21800000	example_0205	G	T	.	PASS	.

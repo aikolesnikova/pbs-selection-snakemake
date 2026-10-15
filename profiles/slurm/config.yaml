@@ -1,0 +1,10 @@
+# Generic template; set site-specific resources in a private copy.
+executor: slurm
+jobs: 6
+latency-wait: 60
+software-deployment-method: conda
+default-resources:
+  mem_mb: 4000
+  runtime: 30
+# Add slurm_account, slurm_partition and slurm_cluster to default-resources
+# in a private site profile when required by your cluster.

@@ -1,0 +1,73 @@
+# Example only: replace all data, reference and metadata paths before running.
+# Numeric chromosomes and GRCh37 are required by the production preflight.
+input_vcf: data/full_cohort.vcf.gz
+input_index: data/full_cohort.vcf.gz.tbi
+reference_fasta: reference/GRCh37.fa
+reference_assembly: GRCh37
+test_mode: false
+output_dir: results/production
+chromosomes:
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'
+- '7'
+- '8'
+- '9'
+- '10'
+- '11'
+- '12'
+- '13'
+- '14'
+- '15'
+- '16'
+- '17'
+- '18'
+- '19'
+- '20'
+- '21'
+- '22'
+regions:
+  NE:
+    focal: NE_Siberia
+    samples: null
+    popmap: metadata/NE.map.tsv
+    triplets: metadata/NE.triplets.tsv
+  West:
+    focal: West_Siberia
+    samples: null
+    popmap: metadata/West.map.tsv
+    triplets: metadata/West.triplets.tsv
+  Central:
+    focal: Central_Siberia
+    samples: null
+    popmap: metadata/Central.map.tsv
+    triplets: metadata/Central.triplets.tsv
+mac_vcf: data/combined_focal_cohort.vcf.gz
+mac_index: data/combined_focal_cohort.vcf.gz.tbi
+mac_min: 5
+fst_policy: corrected_clipped
+ld_samples: all_siberians
+clumping:
+  candidate_p: 0.001
+  candidates_only: true
+  p1: 1.0
+  p2: 1.0
+  r2: 0.5
+  kb: 250
+vep:
+  enabled: false
+  conda_env: VEP
+  cache_dir: /path/to/vep-cache
+  plugins_dir: /path/to/vep-cache/Plugins
+  cache_version: null
+  cadd: false
+  cadd_snv: /path/to/CADD/whole_genome_SNVs.tsv.gz
+  cadd_indels: /path/to/CADD/InDels.tsv.gz
+resources:
+  mem_mb: 50000
+  runtime_minutes: 360
+  tool_threads: 2
+  vep_threads: 2

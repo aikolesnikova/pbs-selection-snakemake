@@ -1,0 +1,13 @@
+CHROM	POS	REF	ALT	Gene	Consequence	Impact
+1	1000000	T	A	RP11-465B22.3	intron_variant	MODIFIER
+1	1100000	A	C	MIR429	upstream_gene_variant	MODIFIER
+1	1200000	A	C	UBE2J2	intron_variant	MODIFIER
+1	1500000	C	G	SSU72	missense_variant	MODERATE
+1	2800000	C	G	.	intergenic_variant	MODIFIER
+1	2900000	A	C	.	intergenic_variant	MODIFIER
+1	6700000	A	C	DNAJC11	synonymous_variant	LOW
+1	8000000	C	G	TNFRSF9	missense_variant	MODERATE
+1	9300000	A	C	H6PD	5_prime_UTR_variant	MODIFIER
+1	11600000	C	G	PTCHD2	downstream_gene_variant	MODIFIER
+1	15900000	A	C	AGMAT	3_prime_UTR_variant	MODIFIER
+1	21800000	G	T	NBPF3	stop_gained	HIGH

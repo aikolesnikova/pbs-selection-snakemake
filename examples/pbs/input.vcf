@@ -1,0 +1,31 @@
+##fileformat=VCFv4.2
+##contig=<ID=1,length=1000>
+##contig=<ID=2,length=1000>
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Stale count for test">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Stale number for test">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NE1	NE2	NE3	West1	West2	West3	Central1	Central2	Central3	SW1	SW2	EA1	EA2
+1	20	old_1_1	A	G	.	PASS	AC=0;AN=0	GT	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0
+1	40	old_1_2	A	G	.	PASS	AC=0;AN=0	GT	1/1	1/1	1/1	0/0	0/0	0/0	0/1	0/1	0/1	0/0	0/0	0/1	0/1
+1	60	old_1_3	A	G	.	PASS	AC=0;AN=0	GT	./.	./.	./.	0/1	0/1	0/1	0/1	0/1	0/1	0/0	0/0	0/1	0/1
+1	80	old_1_4	A	G	.	PASS	AC=0;AN=0	GT	0/1	0/1	0/1	0/1	0/1	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0
+1	100	old_1_5	A	G	.	PASS	AC=0;AN=0	GT	0/1	0/1	1/1	1/1	1/1	0/1	0/0	0/1	0/0	0/1	0/1	0/1	1/1
+1	120	old_1_6	A	G	.	PASS	AC=0;AN=0	GT	0/1	1/1	1/1	0/0	1/1	0/0	1/1	1/1	0/0	0/1	0/1	0/0	0/1
+1	140	old_1_7	A	G	.	PASS	AC=0;AN=0	GT	0/0	0/0	1/1	0/0	0/0	1/1	1/1	0/1	1/1	0/1	0/0	0/0	0/0
+1	160	old_1_8	A	G	.	PASS	AC=0;AN=0	GT	1/1	1/1	0/0	0/0	0/1	0/1	0/0	1/1	0/1	0/0	1/1	0/1	1/1
+1	180	old_1_9	A	G	.	PASS	AC=0;AN=0	GT	1/1	0/0	1/1	0/0	1/1	0/0	1/1	0/0	0/1	1/1	0/1	1/1	1/1
+1	200	old_1_10	A	G	.	PASS	AC=0;AN=0	GT	0/1	0/1	1/1	0/1	1/1	0/0	1/1	1/1	0/0	0/0	1/1	0/1	0/1
+1	220	old_1_11	A	G	.	PASS	AC=0;AN=0	GT	0/1	1/1	0/1	1/1	0/1	0/0	0/1	0/0	0/1	0/1	0/1	1/1	1/1
+1	240	old_1_12	A	G	.	PASS	AC=0;AN=0	GT	1/1	0/0	0/0	0/1	0/1	0/0	1/1	0/0	0/0	1/1	0/1	0/0	0/1
+2	20	old_2_1	A	G	.	PASS	AC=0;AN=0	GT	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0
+2	40	old_2_2	A	G	.	PASS	AC=0;AN=0	GT	1/1	1/1	1/1	0/0	0/0	0/0	0/1	0/1	0/1	0/0	0/0	0/1	0/1
+2	60	old_2_3	A	G	.	PASS	AC=0;AN=0	GT	./.	./.	./.	0/1	0/1	0/1	0/1	0/1	0/1	0/0	0/0	0/1	0/1
+2	80	old_2_4	A	G	.	PASS	AC=0;AN=0	GT	0/1	0/1	0/1	0/1	0/1	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0
+2	100	old_2_5	A	G	.	PASS	AC=0;AN=0	GT	0/0	1/1	0/0	1/1	0/0	0/0	0/0	1/1	0/1	0/0	0/1	0/1	0/1
+2	120	old_2_6	A	G	.	PASS	AC=0;AN=0	GT	0/1	1/1	1/1	1/1	0/0	1/1	0/1	0/1	0/0	0/1	0/1	0/1	0/1
+2	140	old_2_7	A	G	.	PASS	AC=0;AN=0	GT	1/1	0/1	0/0	0/0	0/1	1/1	0/1	0/0	0/0	1/1	0/0	1/1	0/0
+2	160	old_2_8	A	G	.	PASS	AC=0;AN=0	GT	0/1	0/1	0/0	0/0	0/0	1/1	0/0	0/0	1/1	0/0	0/1	1/1	1/1
+2	180	old_2_9	A	G	.	PASS	AC=0;AN=0	GT	0/0	0/0	0/1	1/1	0/1	1/1	0/0	0/0	1/1	1/1	0/1	0/1	1/1
+2	200	old_2_10	A	G	.	PASS	AC=0;AN=0	GT	0/1	0/1	1/1	0/1	1/1	0/0	0/1	0/1	1/1	0/0	0/1	0/1	1/1
+2	220	old_2_11	A	G	.	PASS	AC=0;AN=0	GT	1/1	1/1	0/1	1/1	0/0	1/1	0/1	1/1	0/1	0/0	1/1	0/0	1/1
+2	240	old_2_12	A	G	.	PASS	AC=0;AN=0	GT	0/0	0/0	1/1	0/1	0/1	0/0	0/0	0/0	0/1	0/1	0/0	1/1	1/1

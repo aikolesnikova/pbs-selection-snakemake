@@ -1,0 +1,15 @@
+name: pbs-portfolio
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - snakemake=9.22.0
+  - snakemake-executor-plugin-slurm=2.8.0
+  - numpy>=1.26,<3
+  - pandas>=2.2,<4
+  - cyvcf2>=0.31,<0.35
+  - bcftools=1.22
+  - htslib=1.22
+  - plink=1.90b7.7
+  - pyyaml

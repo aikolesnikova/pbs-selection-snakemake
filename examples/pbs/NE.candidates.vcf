@@ -1,0 +1,25 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##source=pbs_selection_snakemake
+##reference=synthetic_fixture
+##contig=<ID=1,length=1000>
+##contig=<ID=2,length=1000>
+##bcftools_normVersion=1.22+htslib-1.22.1
+##bcftools_normCommand=norm -f tests/data/reference.fa -c e -Oz -o results/test/final/NE.GRCh37.vcf.gz results/test/final/NE.GRCh37.vcf.gz.raw.vcf; Date=Thu Oct 15 19:34:41 2026
+##bcftools_viewVersion=1.22+htslib-1.22.1
+##bcftools_viewCommand=view -Ov -o examples/pbs/NE.candidates.vcf results/test/final/NE.GRCh37.vcf.gz; Date=Thu Oct 15 19:47:33 2026
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	40	1:40	A	G	.	PASS	.
+1	80	1:80	A	G	.	PASS	.
+1	100	1:100	A	G	.	PASS	.
+1	120	1:120	A	G	.	PASS	.
+1	140	1:140	A	G	.	PASS	.
+1	160	1:160	A	G	.	PASS	.
+1	180	1:180	A	G	.	PASS	.
+2	40	2:40	A	G	.	PASS	.
+2	80	2:80	A	G	.	PASS	.
+2	100	2:100	A	G	.	PASS	.
+2	120	2:120	A	G	.	PASS	.
+2	140	2:140	A	G	.	PASS	.
+2	180	2:180	A	G	.	PASS	.
+2	220	2:220	A	G	.	PASS	.
